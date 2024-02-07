@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <!-- Promises are solutions to the callbackhell(continously recursive call making)  -->
+    <!-- Promises provides prmoise of code execution so either the code is executed or not in both cases we can get notified -->
+
+    <script>
+
+        console.log("Timepass.....");
+
+
+        let prom1 = new Promise((resolve, reject) => {
+
+            let a = Math.random();
+
+            if (a < 0.5) {
+                // just for our scenario considering if value is less then data is not loaded from server and
+                // there is some issue
+                reject("sorry data was not loaded")
+
+            }
+            else {
+                // reslove = succees
+                // reject= error
+                setTimeout(() => {
+                    console.log("Yes I am done");
+                    resolve("success") // this success is argument which will be passed to  = then block where we will write
+                    //code what we have to do after successffull execution of code
+
+                }, 3000);
+
+            }
+
+
+        })
+
+
+        // if data fetched successfully 
+        prom1.then((arg) => {
+            // write code you want to execute after successfull fetching of the data
+            console.log("your data is fetched successfully ");
+            console.log(`printing argument = ${arg} passed by the resolve`);
+        })
+
+        // if data does not fetched succesfully
+
+        prom1.catch((arg) => {
+            console.log("your data not fetched successfully");
+            console.log(`printing argument = ${arg} passed by the reject`);
+        })
+
+
+
+
+        console.log("Timepass .....");
+        console.log("Timepass. ....");
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+    <script>
+
+        let a = prompt("enter the number 1 = ")
+
+        let b = prompt("enter the number 2 = ")
+
+        if(isNaN(a) || isNaN(b) ){
+            throw SyntaxError("Please enter the number")
+            //throw new Error("Please enter the number") // custom error
+
+        }
+
+        // if error is thrown age ka code run execute nhi hoga
+        // agar error nahi throw kia to normal flow hoga code ka
+        
+        let sum = parseInt(a) + parseInt(b)
+
+        console.log(sum);
+
+        console.log("running timepass");
+
+        console.log("running timepass");
+
+    </script>
+    
+</body>
+
+</html>

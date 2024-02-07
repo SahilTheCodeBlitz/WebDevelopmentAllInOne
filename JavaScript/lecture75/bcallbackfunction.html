@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .box{
+            background-color: aquamarine;
+            border: 2px solid black;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="box">Hello</div>
+
+<script>
+    const callback = (arg1,arg2) => {
+
+        console.log("printing argument 1 ",arg1);
+        console.log("printing argument 2 ",arg2);
+
+    }
+    // callbackfunction are called in asyncchronous event  where event will happen or takes place after happening
+    // of the specific event or after specific time
+    // callbackfunction can be used to pass function as argument
+    
+    const loading = (arg1,callback)=>{
+
+        let ele = document.getElementsByClassName("box")[0]
+
+        setTimeout(() => {
+
+            ele.style.backgroundColor = "red"
+            let sc = callback("sahil",123)
+        }, 3000);
+
+        
+    }
+
+    loading("hello",callback)
+</script>    
+    
+</body>
+</html>

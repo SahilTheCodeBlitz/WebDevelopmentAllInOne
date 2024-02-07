@@ -1,0 +1,77 @@
+callback functionn in javascript
+
+In JavaScript, a callback function is a function that is passed as an argument to another function and is executed after the completion of some asynchronous operation or at a specified time. Callback functions are commonly used in scenarios such as handling events, making asynchronous requests (e.g., AJAX), and working with timers.
+
+Here's a simple example to illustrate the concept of a callback function:
+
+```javascript
+// Function that takes a callback as an argument
+function doSomethingAsync(callback) {
+  // Simulating an asynchronous operation (e.g., fetching data)
+  setTimeout(function () {
+    console.log("Async operation completed!");
+    // Execute the callback function
+    callback();
+  }, 2000); // 2 seconds delay
+}
+
+// Callback function to be passed
+function callbackFunction() {
+  console.log("Callback executed!");
+}
+
+// Calling the function with the callback
+doSomethingAsync(callbackFunction);
+```
+
+In this example:
+
+1. `doSomethingAsync` is a function that simulates an asynchronous operation using `setTimeout`. It takes a callback function (`callback`) as an argument.
+2. `callbackFunction` is the callback function that will be executed once the asynchronous operation inside `doSomethingAsync` is complete.
+3. When `doSomethingAsync` is called, it will print "Async operation completed!" after a 2-second delay, and then it will execute the provided callback (`callbackFunction`), which will print "Callback executed!".
+
+Callbacks are essential for handling asynchronous code in JavaScript, allowing you to specify what should happen once a particular task completes without blocking the execution of other code. They are widely used in event handling, AJAX requests, and other scenarios where timing and order of execution are crucial.
+
+
+
+
+
+
+why to use callback function for asynchronouis events and not the normal function 
+
+In JavaScript, asynchronous operations often involve waiting for some external process to complete, such as fetching data from a server, reading a file, or handling user input. These operations take time to complete, and the JavaScript engine doesn't wait for them to finish before moving on to the next line of code. Instead, it continues executing the remaining code.
+
+If you were to use a synchronous function for these operations, it would block the entire execution of the program until the operation is complete. This would lead to unresponsive and slow applications, especially in scenarios like web development, where interactions with servers, user interfaces, and other external resources are common.
+
+Callback functions, on the other hand, allow you to specify what should happen after an asynchronous operation completes without blocking the rest of the code. By passing a function as a callback, you're essentially saying, "Here's what I want to happen when the operation is finished." This allows the JavaScript engine to continue executing other code while waiting for the asynchronous task to complete.
+
+Here's a simple example to illustrate the point:
+
+```javascript
+// Synchronous function (blocking)
+function syncFunction() {
+  console.log("Synchronous function");
+}
+
+console.log("Before synchronous function");
+syncFunction();
+console.log("After synchronous function");
+
+// Asynchronous function with a callback
+function asyncFunction(callback) {
+  setTimeout(function () {
+    console.log("Async operation completed");
+    // Execute the callback
+    callback();
+  }, 2000);
+}
+
+console.log("Before asynchronous function");
+// Passing a callback function
+asyncFunction(function () {
+  console.log("Callback executed");
+});
+console.log("After asynchronous function");
+```
+
+In this example, the synchronous function (`syncFunction`) blocks the execution of the entire program until it completes. On the other hand, the asynchronous function (`asyncFunction`) with a callback allows other code to continue running while waiting for the asynchronous operation to finish. This non-blocking nature is crucial for building responsive and efficient applications.

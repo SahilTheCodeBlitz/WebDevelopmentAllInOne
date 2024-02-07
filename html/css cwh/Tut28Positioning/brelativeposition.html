@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Relative Position</title>
+
+    <style>
+
+        /* Relative Position mtlb element ab apne actual psition se move kar skta hai jab top and left apply kar 
+        top,left,bottom,zindex vagare lag sakta hai */
+
+         
+        *{
+            margin: 0px;
+            padding: 0px;
+        }
+
+        .box{
+            margin: 10px;
+            border: 2px solid black;    
+            width: 50vw;
+            height: 20vh;      
+        }
+
+        .box1{
+            
+        
+            background-color: aqua;
+
+        }
+        .box2{
+            position: relative;
+            background-color: bisque;
+            top: -48px;
+            left: 144px;
+
+        }
+        .box3{
+
+            background-color: blueviolet;
+            position: relative;
+            z-index: 2  /* 2; isko upar lana hai box 4 ke */
+
+        }
+
+        .box4{
+
+            background-color: brown;
+            position: relative;
+            top: -48px;
+            left: 144px;
+            z-index: 1;
+
+        }
+
+
+    </style>
+</head>
+<body>
+
+    <div class="box box1">Box1</div>
+    <div class="box box2">Box2</div>
+    <div class="box box3">Box3</div>
+    <div class="box box4">Box4</div>
+    
+</body>
+</html>

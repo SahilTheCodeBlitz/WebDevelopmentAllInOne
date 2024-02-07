@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        // finally is used when you want that even if error is catched or not the code under this will be executed
+        // function ke case me imp role play karega agar , function return karta hai to age ka code executr nhi hota
+        // finaaly use kia to age ka code bhi execute hoga
+
+        function test(){
+
+            try {
+                if(1){
+                    return true
+
+                }
+                
+                
+            } catch (error) {
+                return false
+            }
+            finally{
+                console.log("even function is returning before i willl be still executed");
+            }
+        }
+
+        test()
+
+
+    </script>
+    
+</body>
+</html>

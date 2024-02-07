@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+
+        .box:first-child{
+            /* agr .box kisi bhi parent element ka first child hai to hi yeh property aplly hogi */
+            background-color: aquamarine;
+            
+        }
+        .box:first-child::first-line{
+            /*agr .box kisi bhi parent element ka first child hai to hi uski first line yeh property aplly hogi */
+            background-color: rgb(238, 160, 44);
+        }
+        .box::first-line{
+            /* har .box class ki first line pink hogi */
+            background-color: rgb(121, 23, 77);
+        }
+
+        .outerbox *{
+            /* accessing all child elements inside the outerbox */
+
+            border: 2px solid black;
+
+        }
+
+        /* attribute selector */
+
+        [data-color="primary"]{
+            background-color: rgb(121, 23, 77);
+        }
+        
+        /* Grouping multiple selectors to apply css
+        p,a, [data-color="primary"]{
+            
+        } */
+
+        .childbox:nth-child(even){
+            background-color: brown;
+        }
+/* 
+        .childbox:nth-child(2){
+            background-color: brown;
+        }
+
+        css property pplied to second element
+
+
+         .childbox:nth-last-child(2){
+            background-color: brown;
+        }
+        css property pplied to second element from last
+        
+        */
+
+        .parentbox::before{
+            content: "hello myself before content" ;
+            font-size: larger;
+            color: gray;
+        }
+
+        .parentbox::after{
+            content: "hello myself after content";
+            font-size: small;
+            color: blue;
+        }
+
+        ::selection{
+            /* when you select anything  */
+            background-color: black;
+            color: cadetblue;
+        }
+
+
+
+
+
+    </style>
+
+
+</head>
+
+<body>
+
+    <div class="outerbox">
+        <div class="box">Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolores delectus dolorem adipisci et, rerum recusandae aliquid quasi quod ullam molestiae modi placeat ad asperiores vel cupiditate iure dicta voluptatum omnis, nulla deleniti! Perspiciatis, quis tempora. Culpa, repudiandae, unde, ipsum excepturi ullam ducimus assumenda deleniti animi error tenetur quibusdam harum aspernatur? Nihil voluptas hic, debitis nobis accusantium dignissimos exercitationem rerum aut et, incidunt quibusdam sit adipisci delectus deleniti nemo perspiciatis architecto quas qui possimus unde voluptatum porro quisquam aperiam. Soluta illo ea consequatur! Magni, neque? Laborum quae, quaerat amet est, placeat laboriosam eaque, iusto odio unde sed sequi dolor cupiditate autem sapiente. Architecto rem, iusto aut iure aliquam molestiae, facere quidem omnis cupiditate voluptatibus adipisci sunt tempora eum nesciunt consectetur quod porro, distinctio id eos vero beatae error. Exercitationem, sint sit ipsam vero in perspiciatis non ut facere similique earum iusto?</div>
+        <div class="box">hello</div>
+        <div class="box">hii</div>
+        <div class="box">Mr</div>
+    </div>
+
+    <div class="parentbox">
+        <div class="childbox" data-color="primary">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Eaque nam adipisci illo quam voluptate aliquam porro ipsum minus quaerat officiis inventore rem, qui sed debitis.</div>
+        <div class="childbox">Lorem ipsum dolor sit amet consectetur.</div>
+        <div class="childbox">Lorem ipsum dolor, sit amet consectetur adipisicing.</div>
+        <div class="childbox">Lorem ipsum dolor sit amet consectetur adipisicing elit. Sint.</div>
+    </div>
+
+    
+</body>
+</html>

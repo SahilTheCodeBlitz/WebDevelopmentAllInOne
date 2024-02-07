@@ -1,0 +1,257 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sahil Portfolio</title>
+    <style>
+        * {
+            margin: 15px solid black;
+        }
+
+        .navigation {
+            display: grid;
+            width: 95vw;
+            height: 10vh;
+            grid-template-rows: auto;
+            grid-template-columns: auto auto auto auto auto auto auto auto auto auto auto;
+            gap: 1px;
+        }
+
+        .name {
+
+            grid-column: 1/3;
+            grid-row: 1/-11;
+        }
+        a {
+            text-decoration: none;
+            color: aliceblue;
+        }
+       
+
+        .navitem {
+            grid-row: 1/-11;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            border: 1px solid #8C52FF;
+            background-color: #8C52FF;
+            color: aliceblue;
+        }
+        
+        .about {
+            grid-column: 3/4;
+            grid-row: 1/-11;
+            background-color:#5CE1E6;
+            border: 1px solid #5CE1E6;
+        }
+
+        .name {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+
+            text-emphasis-style: bold;
+            font-size: 30px;
+            font-weight: 1000;
+            color: #8C52FF;
+        }
+
+        .Main {
+            display: grid;
+            width: 95vw;
+            height: 85vh;
+            grid-template-columns: auto auto auto auto auto auto auto auto auto auto auto;
+            grid-template-rows: auto auto auto auto auto auto;
+            gap: 1px;
+        }
+
+        .sidebar {
+            grid-column: 1/3;
+            grid-row: 1/7;
+            grid-template-rows: repeat(3, 1fr);
+            /* Use repeat to create equal-height rows */
+            align-items: stretch;
+            /* Ensure equal height for all items */
+            
+        }
+
+        .hero {
+            
+            grid-column: 3/12;
+            grid-row: 1/-1;
+        }
+
+        .sidebar {
+
+            display: grid;
+            grid-template-rows: auto auto auto;
+            grid-template-columns: auto auto;
+        }
+
+        .profile {
+            margin: 0;
+            padding: 0;
+            grid-column: 1/3;
+            grid-row: -4/-2;
+            background-image: url("./sahilprofile.jpg");
+            
+            background-size: cover;
+            /* Cover the entire container */
+            background-position: center;
+            /* Center the background image */
+            background-repeat: no-repeat;
+            /* Do not repeat the background image */
+
+        }
+
+        .details {
+
+            grid-row: -2/-1;
+            grid-column: 1/3;
+            background-color: #8C52FF;
+            color: aliceblue;
+
+        }
+
+        .innerdet {
+            padding: 3px;
+            margin: 3px;
+            width: 100%;
+            height: auto;
+        }
+
+        .hero{
+            padding: 10px;
+            
+        }
+        .titlehero{
+            margin: 10px;
+            color: #A6A6A6;
+            font-size: 20px;
+
+        }
+        .namehero{
+            margin: 10px;
+            color: #8C52FF;
+            font-size: 65px;
+
+
+        }
+        .introductionhero{
+            margin-top: 20px;
+            margin-right:10px ;
+            margin-left:10px ;
+            color: #A6A6A6;
+            font-size: 35px;
+
+        }
+        .contenthero{
+            margin: 10px;
+            color: #000000;
+            font-size: 20px;
+
+        } 
+        .skillshero{
+            margin-top: 20px;
+            margin-right:10px ;
+            margin-left:10px ;
+            color: #A6A6A6;
+            font-size: 35px;
+        }  
+
+    </style>
+</head>
+
+<body>
+    <div class="navigation">
+        <div class="name">Sahil.CV</div>
+        <div class="about navitem">About</div>
+        <div class="skills navitem">Skills</div>
+        <div class="services navitem">Services</div>
+        <div class="experience navitem">Experience</div>
+        <div class="education navitem">Education</div>
+        <div class="projects navitem"><a href="./projectforportfolio.html"> Projects</a> </div>
+        <div class="testimonals navitem">Testimonals</div>
+        <div class="contact navitem">Contact</div>
+        <div class="space"></div>
+
+    </div>
+
+    <div class="Main">
+
+        <div class="sidebar">
+            <div class="profile">
+
+            </div>
+            <div class="details">
+
+                <div class="names innerdet">
+                    Name : Sahil Sanjay Khane
+                </div>
+
+                <div class="location innerdet">
+                    Location : Rasayani
+                </div>
+
+                <div class="dob innerdet">
+                    DOB : 26 Nov 2002
+                </div>
+
+                <div class="college innerdet">
+                    College : PHCET
+                </div>
+
+                <div class="education innerdet">
+                    Education : BE in Computer Engineering
+                </div>
+
+                <div class="interest innerdet">
+                    Interest : Data Science , Web Development
+                </div>
+
+
+
+
+            </div>
+        </div>
+        <div class="hero">
+
+            <div class="titlehero">Aspiring Web Developer and Data Scientist</div>
+            <div class="namehero">Sahil Sanjay Khane</div>
+            <div class="introductionhero">Introduction</div>
+            <div class="contenthero">Sahil Khane stands out as a multifaceted professional, boasting a rich skill set
+                encompassing Python, data science, web development, and Android app development. His mastery of Python
+                extends to the dynamic realm of data science, where he employs analytical tools and algorithms to derive valuable insights from complex
+                datasets. Sahil's proficiency in web development is marked by his ability to craft responsive and
+                user centric interfaces, demonstrating a keen eye for design and functionality. In the realm of Android development,
+                he brings innovative ideas to life, creating applications that seamlessly integrate with the mobile
+                landscape.</div>
+            <div class="skillshero">
+                Skills
+               
+            </div> 
+           
+                    <ul >
+                        <li>Python</li>
+                        <li>Java</li>
+                        <li>Html</li>
+                        <li>CSS</li>
+                        <li>SQL</li>
+                        <li>Andoid App Development</li>
+                        <li>Machine Learning</li>
+                        
+
+                    </ul>
+                  
+
+        </div>
+
+    </div>
+
+
+
+</body>
+
+</html>

@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    .box {
+        border: 2px solid black;
+    }
+</style>
+
+<body>
+
+    <div class="container">
+        <div class="box box1">I am box1</div>
+        <div class="box box2">I am box2</div>
+
+    </div>
+
+    <script>
+
+        function randomColor() {
+
+            let buff = '0123456789ABCDEF';
+            let colorcode = '#'
+
+
+            for (let i = 0; i < 6; i++) {
+                let randomEle = Math.floor(Math.random() * 15)
+                let sel = buff[randomEle]
+                colorcode += sel
+
+
+            }
+            return colorcode
+        }
+
+        let co = document.getElementsByClassName("box")[0]
+        let c = document.getElementsByClassName("box")[1]
+
+        setInterval(() => {
+            co.style.backgroundColor = randomColor();
+            c.style.backgroundColor = randomColor()
+        }, 3000);
+
+        // har is interval ke bad color chnage hota rahega
+        // har 3 second bad bar bar color change hoga
+
+
+    </script>
+
+</body>
+
+</html>

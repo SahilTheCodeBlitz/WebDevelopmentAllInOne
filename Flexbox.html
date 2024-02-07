@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flex Box</title>
+
+    <style>
+        .container1{
+            border: 2px solid red;
+            height: 45vh;
+            width: 70vw;
+        }
+
+        .item{
+            background-color: aqua;
+            margin: 2px;
+            height: 25px;
+            width: 25px;
+            border: 1px solid black;
+        }
+
+        .container2{
+            display: flex;/* items will be made inline*/
+            align-items: center; /* items will be made centered corresponding to cross axis*/
+            justify-content: center;/* items will be made centered corresponding to main axis*/
+            border: 2px solid red;
+            height: 45vh;
+            width: 70vw;
+        }
+        /* align items and justify-content value depemnds upon the cross axis and main axis
+          flex-direction = row , main axis = x axis anf cross axis = y axis
+          flex-direction = column , main axis = y axis and cross axis = x axis
+           */
+        .container3{
+            flex-direction: column;
+            display: flex;/* items will be made inline*/
+            align-items: center; /* items will be made aligned center correspomd to cross axis , here cross axis is x axis*/
+            border: 2px solid red;
+            height: 45vh;
+            width: 70vw;
+        }
+
+        .container4{
+            margin: 5px;
+            display: flex;
+            width: 30vw;
+            height: 30vh;
+            border: 2px solid red;
+            flex-wrap: wrap;/* if flex items doesnot fix on current row it overflows from container then flex wrap takes next row and fix it appropriaely with in container */
+            /* if you want to align single row of flex items you use align-item
+            but if flex items are present in multiple rows then you use align-content */
+            align-content: center;
+            /* gap: 20px 20px; row,column
+            column-gap: 20px;
+            row-gap: 20px; */
+
+        }
+
+
+
+    </style>
+</head>
+
+<body>
+
+    <!-- This is the default behavioir  -->
+
+    <div class="container1">
+
+        <div class="item"></div>
+        <div class="item"></div>
+        <div class="item"></div>
+        <div class="item"></div>
+        <div class="item"></div>
+        <div class="item"></div>
+        <div class="item"></div>
+        <div class="item"></div>
+        
+    </div>
+
+    <!--lets use flexbox -->
+
+    <div class="container2">
+
+        <div class="item"></div>
+        <div class="item"></div>
+        <div class="item"></div>
+        <div class="item"></div>
+        <div class="item"></div>
+        <div class="item"></div>
+        <div class="item"></div>
+        <div class="item"></div>
+       
+
+    </div>
+
+    <div class="container2">
+
+        <div class="item"></div>
+        <div class="item"></div>
+        <div class="item"></div>
+        <div class="item"></div>
+        <div class="item"></div>
+        <div class="item"></div>
+        <div class="item"></div>
+        <div class="item"></div>
+       
+
+    </div>
+
+    <div class="container3">
+
+        <div class="item">1</div>
+        <div class="item">2</div>
+        <div class="item">3</div>
+        <div class="item">4</div>
+        <div class="item">5</div>
+        <div class="item">6</div>
+        <div class="item">7</div>
+        <div class="item">8</div>
+       
+
+    </div>
+
+    <div class="container4">
+
+        <div class="item">1</div>
+        <div class="item">2</div>
+        <div class="item">3</div>
+        <div class="item">4</div>
+        <div class="item">5</div>
+        <div class="item">6</div>
+        <div class="item">7</div>
+        <div class="item">8</div>
+        <div class="item">1</div>
+        <div class="item">2</div>
+        <div class="item">3</div>
+        <div class="item">4</div>
+        <div class="item">5</div>
+        <div class="item">6</div>
+        <div class="item">7</div>
+        <div class="item">8</div>
+        <div class="item">1</div>
+        <div class="item">2</div>
+        <div class="item">3</div>
+        <div class="item">4</div>
+        <div class="item">5</div>
+        <div class="item">6</div>
+        <div class="item">7</div>
+        <div class="item">8</div>
+        <div class="item">1</div>
+        <div class="item">2</div>
+        <div class="item">3</div>
+        <div class="item">4</div>
+        <div class="item">5</div>
+        <div class="item">6</div>
+        <div class="item">7</div>
+        <div class="item">8</div>
+
+    </div>
+
+
+</body>
+
+</html>

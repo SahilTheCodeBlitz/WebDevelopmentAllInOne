@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Variables</title>
+
+    <style>
+        *{
+            margin: var(--primarymargin);
+            padding: var(--primarypadding);
+        }
+        :root{
+
+            /* this is declaring global variables   */
+
+            --primarycolor : rgba(104, 238, 104, 0.582) ; 
+            --secondarycolor : rgb(92, 240, 195);           
+            --primarypadding :0px;
+            --primarymargin:0px;
+
+        }
+
+        nav ul{
+            --primarycolor : rgba(35, 82, 78, 0.582);
+            display: flex;
+
+            background-color: var(--primarycolor,yellowgreen);
+        }
+
+        nav ul li{
+            list-style: none;
+            padding: 10px;
+        }
+
+        ul li:first-child{
+            background-color:var(--secondarycolor);
+        }
+
+        .body-contents{
+
+            
+            background-color: yellowgreen;
+
+        }
+    </style>
+</head>
+<body>
+
+    <nav>
+        <ul>
+            <li>Home</li>
+            <li>About</li>
+            <li>Education</li>
+            <li>Achievements</li>
+        </ul>
+    </nav>
+
+    <div class="body-contents">
+        Lorem, ipsum dolor sit amet consectetur adipisicing elit. Unde cupiditate corporis nesciunt, vero dicta perferendis nam odit adipisci laboriosam minima aliquid, consequuntur distinctio quisquam eos sint. Harum sapiente reiciendis dolor sint quas, atque quae modi, voluptatibus quo id exercitationem temporibus ducimus aliquid, neque repellat sed iusto. Aspernatur, a. Assumenda dolore eaque voluptas expedita provident dolor voluptatem porro nisi explicabo illum. Impedit, sint qui eligendi consectetur possimus iusto odio facilis, beatae dolore sapiente laboriosam quae dicta mollitia adipisci neque quaerat perspiciatis excepturi reiciendis et sed. Sit molestias atque quis debitis itaque magnam nobis cum, consequuntur id voluptatem rem ipsa reiciendis soluta!
+    </div>
+    
+</body>
+</html>

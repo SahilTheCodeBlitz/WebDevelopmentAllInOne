@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS lists</title>
+    <style>
+        nav ul li{
+            display: list-item; /* by default hota hai ye */
+            list-style: none;/*marker will be gone */
+            list-style: devanagari;
+            background-color: aqua;
+            /* marker bahar hai list item ke to include marker in
+            list item use list-style-position: : ; */
+            list-style-position:inside;/*   marker is inside li */
+
+
+        }
+        main ul li{
+
+            display: list-item;
+            list-style-type:"😊" ;
+            
+            border: 2px solid black;
+            list-style-position: inside;
+/* 
+            list-style-image:'../assets/box model.png' ;  set marker
+            as image*/
+
+        }
+    </style>
+</head>
+<body>
+    <nav>
+        <ul>
+            <li>Home</li>
+            <li>About</li>
+            <li>Contact</li>
+        </ul>
+    </nav>
+
+    <main>
+        <ul>
+            <li>Hiii</li>
+            <li>Hello</li>
+            <li>Mr</li>
+            <li>Sahil</li>
+        </ul>
+    </main>
+    
+</body>
+</html>

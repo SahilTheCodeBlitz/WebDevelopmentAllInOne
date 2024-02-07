@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sahil Portfolio</title>
+    <style>
+        * {
+            margin: 15px solid black;
+        }
+
+        .navigation {
+            display: grid;
+            width: 95vw;
+            height: 10vh;
+            grid-template-rows: auto;
+            grid-template-columns: auto auto auto auto auto auto auto auto auto auto auto;
+            gap: 1px;
+        }
+
+        .name {
+
+            grid-column: 1/3;
+            grid-row: 1/-11;
+        }
+
+        .about {
+            grid-column: 3/4;
+            grid-row: 1/-11;
+            background-color: blueviolet;
+        }
+
+        .navitem {
+            grid-row: 1/-11;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            border: 1px solid #8C52FF;
+            background-color: #8C52FF;
+            color: aliceblue;
+        }
+
+        .name {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            text-emphasis-style: bold;
+            font-size: 30px;
+            font-weight: 1000;
+            color:#8C52FF;
+        }
+
+        .Main {
+            display: grid;
+            width: 95vw;
+            height: 85vh;
+            grid-template-columns: auto auto auto auto auto auto auto auto ;
+            grid-template-rows: auto auto auto auto;
+            gap: 1px;
+        }
+
+        .sidebar {
+            grid-column: 1/2;
+            grid-row: 1/5;
+            border: 2px solid black;
+        }
+
+        .hero {
+            border: 2px solid black;
+            grid-column: 2/8;
+            grid-row: -9/-1;
+        }
+
+        .sidebar {
+          
+            display: grid;
+            grid-template-rows: auto auto auto;
+            grid-template-columns: auto auto;
+        }
+
+        .profile {
+            margin: 0;
+            padding: 0;
+            grid-column: 1/3;
+            grid-row: -4/-2;
+            background-image: url("./asset/CaptainAmericaHughes.jpg");
+            background-size: cover;
+            /* Cover the entire container */
+            background-position: center;
+            /* Center the background image */
+            background-repeat: no-repeat;
+            /* Do not repeat the background image */
+        }
+        .details{
+            
+            grid-row: -2/-1;
+            grid-column: -3/-1;
+            background-color: #8C52FF;
+            color: aliceblue;
+               
+        }
+        .innerdet{
+            padding: 3px;
+            margin: 3px;
+            width: 100%;
+            height: auto;
+        }
+      
+    </style>
+</head>
+
+<body>
+    <div class="navigation">
+        <div class="name">Sahil.CV</div>
+        <div class="about navitem">About</div>
+        <div class="skills navitem">Skills</div>
+        <div class="services navitem">Services</div>
+        <div class="experience navitem">Experience</div>
+        <div class="education navitem">Education</div>
+        <div class="portfolio navitem">Portfolio</div>
+        <div class="testimonals navitem">Testimonals</div>
+        <div class="contact navitem">Contact</div>
+        <div class="space"></div>
+
+    </div>
+    <div class="Main">
+
+        <div class="sidebar">
+            <div class="profile">
+
+            </div>
+            <div class="details">
+
+                <div class="names innerdet">
+                    Name : Sahil Sanjay Khane
+                </div>
+
+                <div class="location innerdet">
+                    Location : Rasayani
+                </div>
+
+                <div class="dob innerdet">
+                    DOB : 26 Nov 2002
+                </div>
+
+                <div class="college innerdet">
+                    College : PHCET
+                </div>
+
+                <div class="education innerdet">
+                    Education : BE in Computer Engineering
+                </div>
+
+                <div class="interest innerdet">
+                    Interest : Data Science , Web Development
+                </div>
+
+
+            </div>
+        </div>
+        <div class="hero">
+
+        </div>
+
+    </div>
+
+</body>
+
+</html>

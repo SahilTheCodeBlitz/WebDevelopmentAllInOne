@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        class Animal {
+
+            constructor(name) { // whenever object will be created the construcotro method will be called
+
+                this.name = name
+                console.log("object created");
+
+            }
+            eats() {
+                console.log( " Animal is eating");
+            }
+            jumps() {
+                console.log(this.name, " is jumping");
+            }
+
+        }
+
+        class Lion extends Animal{
+
+            constructor(name){
+                
+                // have to compulsarily call super class cosntructor 
+                super(name)
+
+                this.name = name
+
+                console.log("Lioniess os roaoring LION class object created  ");
+                
+
+
+            }
+
+            roar(){
+                console.log(this.name ," Roarsssssss ...");
+            }
+
+            // method overridding
+
+            eats(){
+                super.eats() // parent class method called
+                console.log("Animal lion eats");
+            }
+
+        }
+
+        let MoroLion = new Lion('MoroLion')
+
+        MoroLion.eats() 
+
+        MoroLion.roar() // actual class property 
+
+        // instanceof use to check object created  is is instance / object of specified class
+        
+        console.log(MoroLion  instanceof Lion); // TRUE
+
+
+    </script>
+
+</body>
+
+</html>

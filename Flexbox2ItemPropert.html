@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flex Box Item Property</title>
+    <style>
+        .container2 {
+            display: flex;
+            border: 2px solid black;
+            background: aqua;
+            width: 500px;
+            height: 300px;
+        }
+
+        .rere{
+            flex-grow: 3;/* takes size of 3
+             flex items*/
+             align-self: flex-end;
+        }
+
+        .container1 {
+            display: flex;
+            border: 2px solid black;
+            background: aqua;
+            width: 500px;
+            height: 300px;
+        }
+
+        .item {
+            height: 30px;
+            width: 30px;
+            margin: 5px;
+            border: 1px solid red;
+            text-align: center;
+        }
+
+        .item1 {
+            height: 30px;
+            width: 30px;
+            margin: 5px;
+            border: 1px solid red;
+            text-align: center;
+        }
+
+        .order9 {
+            order: 9;
+        }
+
+        .order2 {
+            order: 2;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <!-- by default all div items have order 0
+        jitni jada order element utna ppiche
+    0 order element first 1 vale after  0  and so on-->
+
+        <div class="item1 order9">1</div>
+        <div class="item1">2</div>
+        <div class="item1">3</div>
+        <div class="item1 order2">4</div>
+        <div class="item1">5</div>
+        <div class="item1">6</div>
+        <div class="item1">7</div>
+        <div class="item1">8</div>
+        <div class="item1">9</div>
+        <div class="item1">10</div>
+        <div class="item1">11</div>
+
+    </div>
+
+    <div class="container2">
+
+        <div class="item rere">7</div>
+        <div class="item">8</div>
+        <div class="item">9</div>
+        <div class="item">10</div>
+        <div class="item">11</div>
+
+    </div>
+
+</body>
+
+</html>

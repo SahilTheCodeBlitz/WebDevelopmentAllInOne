@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+
+        .container{
+
+            border: 2px solid black;
+            background-color: aquamarine;
+            width: 500px;
+            height: 500px;
+            
+
+        }
+
+        img{
+            /* width: 400px;
+            height: 400px;
+            object-fit: fill; default property covers entire area 400 by 400 and image part is not cut but aspect ratio is not 
+            obtained 
+            object-fit: cover; aspect ratio is maintained but for that some part of image  is cut */
+
+            width: 500px;
+            height: 500px;
+            object-fit: cover;
+            /* object-position: top right; means top right part will be present and given moe imp     */
+            object-position: center; 
+
+        }
+
+    </style>
+   
+</head>
+<body>
+
+    <div class="container">
+        <img src="../assets/object.jpg" alt="photography image">
+    </div>
+    
+</body>
+</html>

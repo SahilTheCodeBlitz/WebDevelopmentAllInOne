@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <!--mouse events =  https://developer.mozilla.org/en-US/docs/Web/API/Element#mouse_events -->
+    <style>
+        .container{
+
+            background-color: aqua;
+            border: 2px solid black;
+            color: black;
+
+        }
+        .box{
+            background-color: yellowgreen;
+            border: 2px solid black;
+        }
+
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="box box1">I am box1</div>
+        <div class="box box2">I am box2</div>
+        
+    </div>
+    <button id="bt1">Click Me</button>
+    <script>
+        let cont = document.getElementById("bt1")
+
+        cont.addEventListener("click",()=>{
+            let co = document.getElementsByClassName("box")[0]
+            co.style.backgroundColor="purple"
+
+            let c = document.getElementsByClassName("box")[1]
+            c.style.backgroundColor="purple"
+            
+        })
+
+        cont.addEventListener("dblclick",()=>{
+            let co = document.getElementsByClassName("box")[0]
+            co.style.backgroundColor = "pink" 
+            // changing inner html 
+            co.innerHTML = '<div> <b>Inner Html Chnaged </b></div>'
+
+            let c = document.getElementsByClassName("box")[1]
+            c.style.backgroundColor="pink"
+
+        })
+
+        cont.addEventListener("mouseenter",()=>{
+            let co = document.getElementsByClassName("box")[0]
+            co.style.backgroundColor = "red"
+
+            let c = document.getElementsByClassName("box")[1]
+            c.style.backgroundColor = "red"
+        })
+
+        cont.addEventListener("contextmenu",()=>{
+            let co = document.getElementsByClassName("box")[0]
+            let c = document.getElementsByClassName("box")[1]
+
+            // used to fire when right click done
+
+            c.style.backgroundColor = "black"
+            c.style.color = "white"
+
+
+            co.style.backgroundColor = "black"
+            co.style.color = "white"
+        })
+
+
+
+    </script>
+    
+</body>
+</html>

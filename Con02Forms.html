@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lets learn form</title>
+</head>
+<body>
+    <h1>Form to apply for Sigma Web Development Course</h1>
+    <form action="post" >
+        <div>
+            <!-- keep id of input and for of label same -->
+            <label for="username">Username</label>
+            <input type="text" id="username" placeholder="Enter your name = "
+            name="username">
+        </div>
+        <!-- radio-->
+        <!-- name=gender same for both input mtlb only one radio button can be selected-->
+        <div>
+            
+
+            <input type="radio" id="male" name="gender" value="male">
+            <label for="male" >Male</label> 
+
+            <input type="radio" id="female" name ="gender" value="female">
+            <label for="female">Female</label>
+
+        </div>
+        <!-- checkbox-->
+        <div>
+            
+            <input type="checkbox" id="apple" name="subscribe" value="yes">
+            <label for="apple">Apple</label>
+
+            <input type="checkbox" id="mango" name="subscribe" value="yes">
+            <label for="mango">Mango</label>
+
+        </div>
+        <div>
+            <label for="comment">Enter Comment</label><br>
+            <textarea name="commentss" id="comment" rows="4" cols="50" placeholder="enter your comment here">
+                
+          </textarea>
+        </div>   
+        
+        <select name="fruits">
+            <option value="apple">Apple</option>
+            <option value="banana">Banana</option>
+            <option value="cherry">Cherry</option>
+        </select>
+
+
+
+    </form>
+    
+</body>
+</html>

@@ -1,0 +1,70 @@
+<!-- Display = none , This property removes the element from the document, clearing the space taken by the element. 
+    When the display is hidden, though the element isn’t visible the space is still taken by the element.
+
+ -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Display Property CSS</title>
+    <style>
+        .box1{
+            
+            border: 2px solid black;
+            background-color: antiquewhite;
+            color: black;
+        }
+
+        .box2{
+            margin-top: 10px;/* Margin nahi lagegi as ye inline element hai */
+            display:inline;
+            border: 2px solid black;
+            background-color: antiquewhite;
+            color: black;
+        }
+        .box3{
+            margin-top: 10px;/* Margin nahi lagegi as ye inline element hai */
+            border: 2px solid black;
+            background-color: antiquewhite;
+            color: black;
+            display: inline-block;
+            width: 400px;
+        }
+
+        .box4{
+            margin-top: 20px;/* Margin nahi lagegi as ye inline element hai */
+            border: 2px solid black;
+            background-color: antiquewhite;
+            color: black;
+            visibility: hidden;
+            width: 400px;
+            height: 200px;
+            text-align: center;
+            display: inline-block;
+        }     
+        
+    </style>
+</head>
+<body>
+    <!-- margin top , width,height inline elements ko nahi lagti so to overcome this we use inline-block-->
+    <div class="box1">
+        Converting block element into inline . Div is block element
+    </div>
+    <div class="box2">
+        Converting block element into inline . Div is block element
+    </div>
+    <div class="box3">
+        Converting block element into inline . Div is block element
+    </div>
+    <br>
+    <br>
+    <div class="box4">
+        Hello .... Studying display:none and hidden property
+    </div>
+    <div class="box2">
+        Converting block element into inline . Div is block element
+    </div>
+
+</body>
+</html>

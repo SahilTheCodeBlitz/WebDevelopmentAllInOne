@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        /* pseudo selector
+        change the color of the visisted link */
+        a:visited{
+
+            background-color:yellow ;
+            
+        }
+        /* change the color of the unvisited link */
+        a:link{
+
+            background-color: aqua;
+
+        }
+        /* if you click on any link then the color will cahnge to red */
+        a:active{
+            background-color: red;
+        }
+
+        /* if we hover on the particular link then color will be black */
+
+        a:hover{
+            background-color: black;
+        }
+
+        /* if any tag has first child as paragraph then the background color 
+        will be changed */
+        p:first-child{
+            background-color: blue;
+        }
+
+
+
+    </style>
+</head>
+<body>
+
+    <a href="https://www.google.com">Go to google visited link </a><br>
+    <a href="https://www.facebook2.com">Go to facebook unvisited link</a><br>
+
+    <div>
+        <p>i am first paragraph</p>
+        <p>i am second paragraph tag</p>
+    </div>
+    <main>
+
+        <p>i am first paragraph</p>
+        <p>i am second paragraph tag</p>
+
+    </main>
+</body>
+</html>

@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <!-- when you click on child element only one alert should take place that is associated with child
+    but after chid parent alert appears and after parent grandparent alert appears this is called as eventbubbling
+    to overcome this we iuse  stoppropagation method
+
+-->
+    <style>
+
+        .grandparent{
+            border: 2px solid black;
+            background-color: bisque;
+            padding: 20px;
+        }
+
+        .parent{
+            border: 2px solid black;
+            background-color: aqua;
+            padding: 20px;
+        }
+
+        .child{
+            border: 2px solid black;
+            background-color: pink;
+            padding: 20px;
+        }
+
+
+    </style>
+</head>
+<body>
+
+    <div class="grandparent">
+        <div class="parent">
+            <div class="child">Hiiii I am child</div>
+        </div>
+    </div>
+    <script>
+        let gp = document.getElementsByClassName("grandparent")[0]
+        let p = document.getElementsByClassName("parent")[0]
+        let c = document.getElementsByClassName("child")[0]
+
+        
+        gp.addEventListener("click",(e) =>{
+            alert("you clicked on the grandparent")
+            
+        })
+
+        p.addEventListener("click",(e) =>{
+            alert("you clicked on the parent")
+           
+        })
+
+        c.addEventListener("click",(e) =>{
+            alert("you clicked on the child")
+           
+        })
+    </script>
+    
+</body>
+</html>

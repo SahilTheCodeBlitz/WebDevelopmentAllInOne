@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <!-- Exploring 6 static method of the prmoise class
+     -->
+
+    <script>
+        let prom1 = new Promise((resolve, reject) => {
+
+            let a = Math.random();
+
+            if (a < 0.5) {
+                // just for our scenario considering if value is less then data is not loaded from server and
+                // there is some issue
+                reject("sorry data was not loaded promise1 ")
+
+            }
+            else {
+                // reslove = succees
+                // reject= error
+                setTimeout(() => {
+                    
+                    resolve("success promise 1") // this success is argument which will be passed to  = then block where we will write
+                    //code what we have to do after successffull execution of code
+
+                },1000);
+
+            }
+
+
+        })
+
+        let prom2 = new Promise((resolve, reject) => {
+
+            let a = Math.random();
+
+            if (a < 0.5) {
+                // just for our scenario considering if value is less then data is not loaded from server and
+                // there is some issue
+                reject("sorry data was not  loaded  prmoise 2")
+
+            }
+            else {
+                // reslove = succees
+                // reject= error
+                setTimeout(() => {
+                    
+                    resolve("success promise 2") // this success is argument which will be passed to  = then block where we will write
+                    //code what we have to do after successffull execution of code
+
+                }, 1000);
+
+            }
+
+
+        })
+
+
+        let p3 = Promise.allSettled([prom1,prom2])
+        
+        // all = makes sure that both the promises must be resolved 
+        
+        // allsettled = return output agar both promises are resolve any one is resolve it just return 
+        // chahe resolve ho ya reject ho status dikhayega 
+
+        p3.then((a)=>{
+            console.log(a);
+            
+
+        }).catch((a)=>{
+            console.log(a);
+
+        })
+
+
+        
+    </script>
+
+
+</body>
+
+</html>

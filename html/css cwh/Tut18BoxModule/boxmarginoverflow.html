@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        /* when two boxes margin overlap at that time what happen is that  donno me se jis bhi box ka margin maximum hoga
+        vo combine me dono ke bich me aa jayga */
+        *{margin: 0;
+        padding: 0;}
+        .box{
+            background-color: yellowgreen;
+        }
+        .box1{
+            color: green;
+            margin: 10px;
+
+        }
+        .box2{
+            color: red;
+            margin: 50px; /*iski margin top and upar vale ki margin bottom dono ek sath merge hoke 50 px ki hogi max margin */
+        }
+
+    </style>
+</head>
+<body>
+
+    <div class="box1 box">I am Box 1</div>
+    <div class="box2 box ">I am Box 2</div>
+    
+</body>
+</html>

@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grid Practice</title>
+    <style>
+        .container{
+            width: 95vw;
+            height: 95vh;
+           
+            background-color: rgb(238, 66, 95) ;
+            border: 2px solid blue;   
+            gap: 7px;         
+            display: grid;
+            grid-template-columns: auto auto auto auto;
+            grid-template-rows: auto auto auto auto auto;
+        }
+        .items{
+            border: 2px solid blueviolet;
+        }
+        .header{
+            grid-column: 1/5;
+            grid-row: 1/2;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-size: larger;
+            background-color: rgb(83, 83, 255);
+        }
+        .menu{
+            grid-column: 1/2;
+            grid-row: 2/4;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-size: larger;
+            background-color: rgb(153, 153, 247);
+        }
+        .main{
+            grid-row: 2/5;
+            grid-column: 2/4;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-size: larger;
+            background-color: rgb(153, 153, 247);
+        }
+        .ad1{
+            grid-row:-5/-2;
+            grid-column: 4/5;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-size: larger;
+            background-color: rgb(153, 153, 247);
+
+        }
+        .ad2{
+            grid-row: 4/5;
+            grid-column:1/2 ;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-size: larger;
+            background-color: rgb(153, 153, 247);
+
+        }
+        .footer{
+            grid-row: 5/6;
+            grid-column: -5/-1;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-size: larger;
+            background-color: rgb(83, 83, 255);
+            
+            
+        }
+
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="header items" >Header</div>
+        <div class="menu items">Menu</div>
+        <div class="main items">Main</div>
+        <div class="ad1 items">Ad1</div>
+        <div class="ad2 items">Ad2</div>
+        <div class="footer items">Footer</div>
+
+    </div>
+
+</body>
+
+</html>

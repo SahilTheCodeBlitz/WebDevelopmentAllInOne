@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Media Query</title>
+    <style>
+
+        *{
+            margin: 0px;
+            padding: 0px;
+            background-color: rgb(233, 15, 52);
+            
+        }
+        .parentbox{
+            display: flex;
+            flex-direction: row;
+        }
+
+        .box{
+            border: 2px solid black;
+            width: 30vw;
+            height:50vh;
+            
+            
+        }
+        .box1{
+            background-color: aquamarine;
+
+        }
+        .box2{
+            background-color: yellowgreen;
+
+        }
+        @media only screen and (max-width : 900px)  {
+            *{
+                background-color: brown;
+            }
+            .parentbox{
+                flex-direction: column;
+            }
+
+            
+
+        }
+
+        @media screen and (orientation:landscape){
+            *{
+                background-color: brown;
+            }
+        }
+
+
+
+    </style>
+</head>
+<body>
+
+    <div class="parentbox" >
+        <div class="box box1"></div>
+        <div class="box box2"></div>
+    </div> 
+    
+</body>
+</html>
+
+<!-- /* Styles for all screens (default) */
+body {
+  background-color: lightgray;
+}
+
+/* Styles for screens with a maximum width of 768px (tablets) */
+@media only screen and (max-width: 768px) {
+  body {
+    background-color: lightblue;
+  }
+}
+
+/* Styles for screens with a maximum width of 1024px (laptops) */
+@media only screen and (min-width: 769px) and (max-width: 1024px) {
+  body {
+    background-color: lightgreen;
+  }
+}
+
+/* Styles for screens with a maximum width of 480px (mobile screens) */
+@media only screen and (max-width: 480px) {
+  body {
+    background-color: lightcoral;
+  }
+} -->

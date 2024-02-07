@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Handling Overflow Property</title>
+
+    <style>
+        /* to handle the content which often gets overflow we use overflow property */
+
+        .overflow{
+            width: 30vw;
+            height: 30vh;
+            border: 2px solid black;
+        }
+
+        .overflow-handle{
+
+            width: 30vw;
+            height: 30vh;
+            border: 2px solid black;
+            overflow: scroll; 
+            /* even if content oveflow nahi bhi ho rha hoga tab bhi scroll bar ayega */
+            overflow: auto;
+            /* overflow auto means only if content are oveflown at that time only scroll bar will be given  */
+            
+        }
+
+        .overflow-nowrap{
+            width: 30vw;
+            height: 30vh;
+            border: 2px solid black;
+            white-space: nowrap; 
+            /* ek hi line me content horizontally scroll hoga   */
+            overflow: auto;
+            /* text-overflow: ellipsis; */
+        }
+
+        .overflow-props{
+            width: 30vw;
+            height: 30vh;
+            border: 2px solid black;
+            overflow-x: hidden;
+            overflow-y: auto;
+        }
+    </style>
+
+</head>
+<body>
+
+    <div class="overflow">
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. In exercitationem atque est labore obcaecati possimus qui aspernatur nam assumenda quis dolorum dicta cum distinctio a iste alias totam voluptas sint vel esse magnam, harum at iusto quod. Reprehenderit magnam accusantium ducimus eligendi beatae, quae molestias voluptatibus? Vel aspernatur excepturi maxime delectus dolore consectetur iure numquam explicabo sapiente? Mollitia debitis dignissimos repellat illum deleniti aliquam, assumenda illo omnis id. Dolorem hic aliquid eos in dolores id assumenda molestiae animi distinctio repudiandae. Nam cum sit vel minima nihil hic voluptatum quas consequuntur minus iure. Dolorem quidem quaerat exercitationem neque unde dolor cupiditate
+        .
+    </div>
+    <br><br><br>
+
+    <div class="overflow-handle">
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. In exercitationem atque est labore obcaecati possimus qui aspernatur nam assumenda quis dolorum dicta cum distinctio a iste alias totam voluptas sint vel esse magnam, harum at iusto quod. Reprehenderit magnam accusantium ducimus eligendi beatae, quae molestias voluptatibus? Vel aspernatur excepturi maxime delectus dolore consectetur iure numquam explicabo sapiente? Mollitia debitis dignissimos repellat illum deleniti aliquam, assumenda illo omnis id. Dolorem hic aliquid eos in dolores id assumenda molestiae animi distinctio repudiandae. Nam cum sit vel minima nihil hic voluptatum quas consequuntur minus iure. Dolorem quidem quaerat exercitationem neque unde dolor cupiditate
+        .
+    </div>
+
+    <div class="overflow-nowrap">
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. In exercitationem atque est labore obcaecati possimus qui aspernatur nam assumenda quis dolorum dicta cum distinctio a iste alias totam voluptas sint vel esse magnam, harum at iusto quod. Reprehenderit magnam accusantium ducimus eligendi beatae, quae molestias voluptatibus? Vel aspernatur excepturi maxime delectus dolore consectetur iure numquam explicabo sapiente? Mollitia debitis dignissimos repellat illum deleniti aliquam, assumenda illo omnis id. Dolorem hic aliquid eos in dolores id assumenda molestiae animi distinctio repudiandae. Nam cum sit vel minima nihil hic voluptatum quas consequuntur minus iure. Dolorem quidem quaerat exercitationem neque unde dolor cupiditate
+        .
+    </div>
+
+    <div class="overflow-props">
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. In exercitationem atque est labore obcaecati possimus qui aspernatur nam assumenda quis dolorum dicta cum distinctio a iste alias totam voluptas sint vel esse magnam, harum at iusto quod. Reprehenderit magnam accusantium ducimus eligendi beatae, quae molestias voluptatibus? Vel aspernatur excepturi maxime delectus dolore consectetur iure numquam explicabo sapiente? Mollitia debitis dignissimos repellat illum deleniti aliquam, assumenda illo omnis id. Dolorem hic aliquid eos in dolores id assumenda molestiae animi distinctio repudiandae. Nam cum sit vel minima nihil hic voluptatum quas consequuntur minus iure. Dolorem quidem quaerat exercitationem neque unde dolor cupiditate
+        .
+    </div>
+
+
+    
+</body>
+</html>

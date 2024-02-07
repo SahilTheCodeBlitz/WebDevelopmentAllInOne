@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .purple{
+            color: purple;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="box">Hello I am box 1</div>
+        <div class="box">Hello I am box 2</div>
+    </div>
+    <script>
+        let div = document.createElement("div");
+        div.innerHTML = "<p>Hello  mr <b> Sahil </b> <p>";        
+        div.setAttribute("class","bgm")
+        document.querySelector(".container").before(div)    // differnet methods are there see notes
+
+        // inserting html
+
+        let cont = document.querySelector(".container");
+cont.insertAdjacentHTML("afterbegin", '<div class="mongo">hii i am under water</div>');
+
+// similaryly can insert elemnt or node
+
+// adding class dynamically
+
+document.querySelector(".container").classList.add("classaddingdynamicaly")
+
+console.log(document.querySelector(".container").classList); // gives name of all class names has two container and  classaddingdynamicaly
+
+
+//toggle  = adds class if doesnot exust or else remove it
+document.querySelector(".box").classList.toggle("purple")
+
+
+</script>
+</body>
+</html>

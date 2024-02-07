@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>OverFlow</title>
+
+    <style>
+        .box1 {
+            border: 2px solid black;
+            width: 30vw;
+            height: 20vh;
+            /* overflow: scroll; vertical scrollbar aa jata hai  even if content overflow nhi kar rha tab bhi aa ajyega*/
+            overflow: auto;/* auto mtlb if zarurat hai that is content bahar jaa rha hai tabhi vertical scroll ayega nhi to nhi*/
+        }
+
+        .box2{
+            border: 2px solid black;
+            width: 30vw;
+            height: 20vh;
+            overflow:auto;
+            /*overflow:clip; you cannot scroll*/
+            white-space: nowrap;/* horizontaly space lega and niche no text entire text will be visisble on single line */ 
+        }
+
+        
+        .box3{
+            border: 2px solid black;
+            width: 30vw;
+            height: 20vh;
+            overflow-x: hidden;
+            overflow-y: scroll;
+           
+        }
+
+        .box4{
+            border: 2px solid black;
+            width: 10vw;
+            height: 20vh;
+            overflow-x: scroll;
+            overflow-y: hidden;
+           
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="box1">
+        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Alias quidem, distinctio culpa enim praesentium, quo
+        amet autem expedita cum doloremque corporis minima mollitia? Commodi perferendis maiores nam facilis voluptatem
+        non assumenda quidem impedit tempora illum! Error nisi voluptatum cum aut a aliquid quos quod natus, ullam ut
+        eaque autem eligendi ipsa culpa reiciendis, officiis, numquam recusandae?
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Corrupti quo tempore pariatur dolor quod natus. Dicta
+        harum quis, a dolor quia non sed consequatur qui esse excepturi autem omnis unde ab tenetur quaerat deserunt in
+        distinctio assumenda. Aperiam, sapiente inventore voluptatibus minima iste nostrum deleniti. Eligendi quia aut
+        nulla tenetur.
+    </div>
+
+    <div class="box2">
+        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Alias quidem, distinctio culpa enim praesentium, quo
+        amet autem expedita cum doloremque corporis minima mollitia? Commodi perferendis maiores nam facilis voluptatem
+        non assumenda quidem impedit tempora illum! Error nisi voluptatum cum aut a aliquid quos quod natus, ullam ut
+        eaque autem eligendi ipsa culpa reiciendis, officiis, numquam recusandae?
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Corrupti quo tempore pariatur dolor quod natus. Dicta
+        harum quis, a dolor quia non sed consequatur qui esse excepturi autem omnis unde ab tenetur quaerat deserunt in
+        distinctio assumenda. Aperiam, sapiente inventore voluptatibus minima iste nostrum deleniti. Eligendi quia aut
+        nulla tenetur.
+    </div>
+
+    <div class="box3">
+        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Alias quidem, distinctio culpa enim praesentium, quo
+        amet autem expedita cum doloremque corporis minima mollitia? Commodi perferendis maiores nam facilis voluptatem
+        non assumenda quidem impedit tempora illum! Error nisi voluptatum cum aut a aliquid quos quod natus, ullam ut
+        eaque autem eligendi ipsa culpa reiciendis, officiis, numquam recusandae?
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Corrupti quo tempore pariatur dolor quod natus. Dicta
+        harum quis, a dolor quia non sed consequatur qui esse excepturi autem omnis unde ab tenetur quaerat deserunt in
+        distinctio assumenda. Aperiam, sapiente inventore voluptatibus minima iste nostrum deleniti. Eligendi quia aut
+        nulla tenetur.
+    </div>
+
+    
+    <div class="box4">
+        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Alias quidem, distinctio culpa enim praesentium, quo
+        amet autem expedita cum doloremque corporis minima mollitia? Commodi perferendis maiores nam facilis voluptatem
+        non assumenda quidem impedit tempora illum! Error nisi voluptatum cum aut a aliquid quos quod natus, ullam ut
+        eaque autem eligendi ipsa culpa reiciendis, officiis, numquam recusandae?
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Corrupti quo tempore pariatur dolor quod natus. Dicta
+        harum quis, a dolor quia non sed consequatur qui esse excepturi autem omnis unde ab tenetur quaerat deserunt in
+        distinctio assumenda. Aperiam, sapiente inventore voluptatibus minima iste nostrum deleniti. Eligendi quia aut
+        nulla tenetur.
+    </div>
+
+
+</body>
+
+</html>

@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .cards{
+            border: 2px solid black;
+            display: flow-root;
+            /* write it in parent , agar image overflow kia to vo usko oveflow nahi hone dega  */
+
+        }
+        .card{
+            border: 2px solid red;
+        }
+        .card2{
+            clear: both; 
+            /* right and left me overflow nahi hona chahiye */
+        }
+        img{
+            float: left;
+            /* image will be floated to the left and it will allow the content to move to right */
+            float: right;
+
+        }
+    </style>
+</head>
+<body>
+
+    <div class="cards">
+        <img src="../assets/box model.png" alt="" width="230">
+        <div class="card">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Molestiae eaque ratione mollitia ipsa quia, quam aliquid unde omnis numquam! Iste dolor repudiandae ea placeat. Hic nostrum unde Lorem ipsum dolor, sit amet consectetur adipisicing elit. Totam nam tenetur reiciendis odit maxime est impedit harum nobis blanditiis, cum consectetur beatae ab tempora laborum deserunt dicta delectus aut numquam provident! Dolore recusandae quo laboriosam perferendis harum autem, nisi culpa. Doloremque blanditiis, enim magni ut, perferendis ducimus nesciunt aspernatur eum omnis, dicta eaque pariatur suscipit in sed itaque incidunt reiciendis voluptate? Deleniti recusandae aliquam quaerat aperiam provident, qui porro ratione minus blanditiis ullam labore quo maiores tenetur nemo ab cupiditate soluta numquam architecto amet. Officia dolore labore illum harum laudantium iste ratione maiores accusamus nesciunt eveniet minima laborum quia animi, repellendus ut hic voluptatibus minus odit? Corrupti quidem ipsa nihil similique officia consectetur cupiditate. Maiores nam nesciunt velit sequi natus, aspernatur modi consectetur? Vel et beatae nemo molestiae suscipit error animi nesciunt ab cumque dolore accusantium, sed numquam accusamus officiis natus blanditiis eaque magni? Quia quibusdam qui quisquam possimus magni!alias ut consequuntur quae eaque, iure sint</div>
+        <div class="card card2">Card 2</div>
+        <div class="card">Card 3</div>
+    </div>
+    
+</body>
+</html>

@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+    <script>
+        console.log("I am first statement");
+        console.log("I am second statement");
+
+        setTimeout(() => {
+            // it is asynchronous event
+            console.log("I am statement under setInterval ");
+        }, 0);
+
+        console.log("I am third statement");
+
+        // normal output how it should be printed
+
+        // I am first statement
+        // I am second statement
+        // I am statement under setInterval  
+        // I am third statement
+
+        // but actual output
+
+        // I am first statement
+        // I am second statement
+        // I am third statement
+        // I am statement under setInterval  
+
+        // this happen becausse setTimeout is asynchronous event
+        
+
+
+       
+
+
+    </script>
+
+
+    
+</body>
+</html>

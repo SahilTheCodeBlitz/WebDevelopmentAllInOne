@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Keyboard Events</title>
+    <style>
+        
+        .box{
+            border: 2px solid black;
+        }
+
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="box box1">I am box1 </div>
+        <div class="box box2">I am box2</div>
+    </div>
+    <script>
+        let co  = document.getElementsByClassName("box")[0]
+        let c = document.getElementsByClassName("box")[1]
+
+        // fired when key is pressed
+        document.addEventListener("keydown",(event)=>{
+            console.log(event.key , event.code);
+        })
+
+        // fired when key is released
+        document.addEventListener("keyup",(event)=>{
+            console.log(event.key , event.code);
+        })
+    </script>
+</body>
+</html>

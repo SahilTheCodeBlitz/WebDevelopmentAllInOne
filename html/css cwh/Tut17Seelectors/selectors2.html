@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        /* child selector
+        only if p direct present under div tag the property will be applied if it is present under any other tag which 
+        come in div then property eill not be applied */
+        div > p{
+            background-color: red;
+        }
+
+        /* descendant selector 
+        if tag is present under div wven though tag is descendatnt that is grand child we can say that the property will 
+        be applied */
+
+        div h1{
+            background-color: yellow;
+        }
+
+        /* universal selector */
+        /* all the tags are selected which is present in the document */
+
+        *{
+            margin: 0px;
+            padding: 0px;
+        }
+
+
+
+    </style>
+</head>
+<body>
+
+    <div>
+        <p> I am paragraph under  div </p>
+        <p> I am paragraph under  div </p>
+        <main>
+            <p>I am paragraph under main where main is under div</p>
+        </main>
+    </div> 
+    <div>
+        <p>hello i am p tag under div </p>
+        <p>
+            <h1>i am descendant of div</h1>
+        </p>
+    </div>
+    
+</body>
+
+</html>
