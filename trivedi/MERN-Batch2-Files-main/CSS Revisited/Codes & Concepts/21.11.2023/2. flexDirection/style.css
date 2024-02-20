@@ -1,0 +1,13 @@
+div{
+    background-color: antiquewhite;
+    border: 2px solid red;
+    /* display: inline-flex; */
+    display: flex;
+    flex-direction: column;
+    /* gap: 200px; */
+}
+
+div>* {
+    border: 2px solid blue;
+    flex-basis: 100px;
+}

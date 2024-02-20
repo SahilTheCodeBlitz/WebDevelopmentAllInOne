@@ -1,0 +1,7 @@
+*{
+    background: red;
+}
+
+p[class="name"]{
+    color: rgba(255, 246, 123, 0.618);
+}

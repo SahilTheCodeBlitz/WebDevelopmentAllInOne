@@ -1,0 +1,29 @@
+
+:root{
+    --primColor: rgb(202, 242, 141);
+    --secColor: rgb(167, 249, 43);
+}
+
+
+
+p{
+    background-color: var(--secColor);
+}
+
+.nav-bar{
+    display: flex;
+    justify-content: space-evenly;
+    flex-direction: row;
+    background-color: var(--primColor);
+
+    /* border: 5px solid red; */
+}
+
+/* ul li:first-child{
+    background-color: var(--primColor);
+} */
+
+/* 
+ul li:nth-child(4) {
+    background-color: var(--primColor);
+} */

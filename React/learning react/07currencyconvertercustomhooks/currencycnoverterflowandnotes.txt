@@ -1,0 +1,7 @@
+so starting with we are creating  custom hooks
+
+custom hooks are nothing but the function that returns something
+
+compelted custom hook designing check it in hooks folder , develped hook to load the data from api
+
+

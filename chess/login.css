@@ -1,0 +1,76 @@
+.container{
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    
+}
+.reg{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+}
+.signin{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    color: rgb(226, 91, 226);
+}
+.innercont{
+    
+    width: 30vw;
+    height: 30vw;
+}
+.actions{
+    display: flex;
+    gap: 23px;
+    
+    justify-content: space-evenly;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+.ema{
+    width: 93%;
+    height: 40px;
+    margin-top: 10px;
+}
+.pass{
+    width: 93%;
+    height: 40px;
+    margin-top:10px;
+}
+.btsign{
+    width: 95%;
+    height: 40px;
+    margin-top: 10px;
+}
+.lin{
+    margin-top: 10px;
+}
+
+.google{
+    width: 95%;
+    height: 40px;
+    margin-top: 10px;
+    background-color: rgb(51 51 51);
+    color: white;
+}
+
+.aimchess{
+    font-size: 50px;
+    
+
+}
+.conts{
+    border: 2px solid black;
+    padding: 10px;
+    padding-bottom: 50px;
+    border-radius:20px ;
+}
+.inp{
+    border-radius: 5px;
+    padding: 5px;
+}

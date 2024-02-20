@@ -1,0 +1,19 @@
+*{
+    background: red;
+}
+
+p[class="name"]{
+    color: rgba(255, 246, 123, 0.618);
+    font-size: 20px;
+}
+
+.name-2{
+    color: aqua;
+    font-size: 20pt;
+}
+
+.inside-p{
+    font-size: 1em;
+
+    /* 2 TIMES OF PARENT ELEMENT'S SIZE */
+}

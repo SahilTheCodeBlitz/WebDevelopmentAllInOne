@@ -1,0 +1,30 @@
+*{
+    background-color: black;
+}
+
+/* h1{
+    color: blueviolet;
+    font-size: 60px;
+} */
+
+.heading{
+    color: purple;
+}
+
+#first-para{
+    font-size: 15px;
+    font-style: "Times New Roman";
+}
+
+/* p[id]{
+    color: aqua;
+} */
+
+p[id="first-para"]{
+    color: green;
+}
+
+#second-para{
+    /* color: rgb(255, 202, 202, 0.8); */
+    color: #fff8dc;
+}

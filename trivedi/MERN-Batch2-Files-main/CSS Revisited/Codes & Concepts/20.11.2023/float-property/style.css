@@ -1,0 +1,32 @@
+div{
+    background-color: aqua;
+    border: 2px solid red;
+    margin-bottom: 10px;
+}
+
+p{
+    /* border: 2px solid green; */
+    padding: 10px;
+    margin: 5px;
+}
+
+img{
+    /* border: 2px solid black; */
+    margin-left: 10px;
+    margin-right: 5px;
+    margin-top: 10px;
+    float: right;
+}
+
+div img:nth-child(2){
+    float: left;
+}
+
+div p:nth-child(2){
+    background-color: greenyellow;
+}
+
+div p:nth-child(3){
+    background-color: antiquewhite;
+    clear: right;
+}

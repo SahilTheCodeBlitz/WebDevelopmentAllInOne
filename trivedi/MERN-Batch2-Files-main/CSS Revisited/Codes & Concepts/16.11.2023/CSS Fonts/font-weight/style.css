@@ -1,0 +1,15 @@
+/* h1{
+    font-weight: normal;
+} */
+
+p{
+    font-weight: bold;
+}
+
+/* h1{
+    font-weight: lighter;
+} */
+
+h1{
+    font-weight: 200;
+}

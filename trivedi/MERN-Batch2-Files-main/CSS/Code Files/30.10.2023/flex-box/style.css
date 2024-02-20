@@ -1,0 +1,30 @@
+/* p{
+    display: block;
+    background-color: aquamarine;
+    border: 2px solid black;
+    
+} */
+
+/* .container{
+    display: inline-flex;
+    gap: 20px;
+    border: 7px solid red;
+}
+
+p{
+    background-color: aquamarine;
+    border: 2px solid black;
+} */
+
+li {
+    list-style: none;
+    border: 2px solid black;
+}
+
+ul{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    gap: 100px;
+    border: 5px solid red;
+}

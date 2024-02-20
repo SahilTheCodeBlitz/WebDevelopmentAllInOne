@@ -1,0 +1,23 @@
+/* #outer-container{
+    background-color: yellow;
+} */
+
+/* .inner-box{
+    background-color: yellow;
+} */
+
+/* Child selector */
+
+/* .inner-box p{
+    color: red;
+} */ 
+
+/* GROUPING MULTIPLE SELECTORS */
+
+/* p,h5{
+    color: red;
+} */
+
+div > p{
+    color: red;
+}

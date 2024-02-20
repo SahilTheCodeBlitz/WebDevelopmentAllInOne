@@ -1,0 +1,12 @@
+div{
+    background-color: aqua;
+    height: 200px;
+    width: 200px;
+    border: 2px solid red;
+    position: fixed;
+    
+}
+h1{
+    color: black;
+    text-align: center;
+}

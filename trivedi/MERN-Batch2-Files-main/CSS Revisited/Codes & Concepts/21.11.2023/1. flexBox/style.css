@@ -1,0 +1,12 @@
+div{
+    background-color: antiquewhite;
+    border: 2px solid red;
+    /* display: inline-flex; */
+    display: flex;
+    gap: 20px;
+}
+
+div>* {
+    border: 2px solid blue;
+    flex-basis: 200px;
+}

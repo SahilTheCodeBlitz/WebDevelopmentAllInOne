@@ -1,0 +1,45 @@
+*{
+    background: white;
+}
+
+
+h1{
+    color: black;
+    font-family: 'Poppins', sans-serif;
+    /* text-align: end; */
+    background-color: aquamarine;
+    width: 200px;
+    height: 200px;
+}
+
+h2{
+    color: black;
+    background-color: aqua;
+    width: 150px;
+    border: 2px solid black;
+    /* padding-left: 20px;
+    padding-top: 11px;
+    padding-bottom: 10px;
+    padding-right: 100px; */
+    padding: 11px 200px 10px 20px;
+    
+    margin: 50px 20px 30px 15px;
+}
+
+span{
+    background-color: burlywood;
+}
+
+.gap{
+    background-color: blue;
+}
+
+div{
+    background-color: chocolate;
+    /* width: 100px;
+    height: 100px; */
+}
+
+h1{
+    background-color: chartreuse;
+}

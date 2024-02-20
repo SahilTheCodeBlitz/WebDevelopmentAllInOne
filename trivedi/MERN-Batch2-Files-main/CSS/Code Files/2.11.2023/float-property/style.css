@@ -1,0 +1,23 @@
+
+
+img{
+    width: 600px;
+    height: 290px;
+    margin-right: 10px;
+    float: right;
+}
+
+p{
+    border: 2px solid red;
+}
+
+.outer-box{
+    border: 5px solid black;
+    padding: 10px;
+    display: flow-root;
+}
+
+.outer-box p:nth-child(3){
+    background-color: aqua;
+    clear: right;
+}

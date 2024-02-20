@@ -1,0 +1,29 @@
+/* #outer-container{
+    background-color: yellow;
+} */
+
+/* .inner-box{
+    background-color: yellow;
+} */
+
+/* Children selector */
+
+/* .inner-box p{
+    color: red;
+}  */
+
+/* GROUPING MULTIPLE SELECTORS */
+
+/* p,h5{
+    color: red;
+} */
+
+/* .inner-box > p{
+    color: red;
+}  */
+
+/* DESCENDENT SELECTOR */
+
+/* div h1{
+    color: blue;
+} */

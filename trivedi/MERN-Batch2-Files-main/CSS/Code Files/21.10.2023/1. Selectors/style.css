@@ -1,0 +1,11 @@
+/* ATTRIBUTE SELECTOR */
+
+p[class="name"]{
+    background-color: antiquewhite;
+}
+
+/* UNIVERSAL SELECTOR */
+
+* {
+    background: yellow;
+}

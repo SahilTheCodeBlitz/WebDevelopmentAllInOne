@@ -1,0 +1,48 @@
+div{
+    background-color: antiquewhite;
+    border: 2px solid red;
+    /* display: inline-flex; */
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+
+    /* justify-content: center; */
+    /* align-content: center; */
+    /* flex-wrap: wrap; */
+    /* height: 70vh; */
+
+}
+
+div>* {
+    border: 2px solid blue;
+    /* min-width: 200px; */
+    flex-basis: 100px; 
+    flex-grow: 1;
+    flex-shrink: 0;
+}
+
+.red{
+    background-color: red;
+    color: white;
+    /* order: 1; */
+
+}
+.blue{
+    background-color: blue;
+    color: white;
+    /* order: 3; */
+}
+.green{
+    background-color: green;
+    color: white;
+    /* order: 2; */
+    /* order: -1; */
+}
+.pink{
+    background-color: palevioletred;
+    color: white;
+}
+.black{
+    background-color: black;
+    color: white;
+}

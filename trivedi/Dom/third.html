@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <h2>List of fruits</h2>
+    <ul>
+        <li>Apple</li>
+        <li>Mango</li>
+        <li>Guava</li>
+        <li>Watermelon</li>
+        <li>Grapes</li>
+        <li>Banana</li>
+    </ul>
+    <br>
+    <br>
+    <button onclick="removeList()">Remove All Elements</button>
+    <br> <br>
+    <button onclick="AddList()">Bring All Elements Back</button>
+
+    <script>
+
+        let list = document.getElementsByTagName("ul")[0]
+        let heading = document.querySelector("h2")
+
+        function removeList() {
+            console.log('clicked remove');
+            list.innerHTML = " "
+            heading.innerHTML = " "
+        }
+
+        function AddList() {
+            console.log('click add list');
+            list.innerHTML = `<li>Apple</li>
+                              <li>Mango</li>
+                              <li>Guava</li>
+                              <li>Watermelon</li>
+                              <li>Grapes</li>
+                              <li>Banana</li>`
+
+            heading.innerHTML = "List of fruits"
+        }
+
+        
+
+    </script>
+
+</body>
+
+</html>

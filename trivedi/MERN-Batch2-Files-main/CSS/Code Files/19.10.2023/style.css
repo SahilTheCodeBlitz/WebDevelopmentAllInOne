@@ -1,0 +1,12 @@
+/* ELEMENT SELECTOR */
+
+h1{background: aqua;}
+
+
+/* CLASS SELECTOR */
+
+.name{background: antiquewhite;}
+        
+/* ID SELECTOR */
+
+#designation{background: yellow;}

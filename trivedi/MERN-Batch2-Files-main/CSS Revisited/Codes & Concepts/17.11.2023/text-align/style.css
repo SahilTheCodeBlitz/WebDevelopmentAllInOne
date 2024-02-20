@@ -1,0 +1,9 @@
+.heading-1{
+    font-family: 'Playfair Display', serif;
+    text-align: center;
+}
+
+ul{
+    /* text-align: end; */
+    list-style: none;
+}

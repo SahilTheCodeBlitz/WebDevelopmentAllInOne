@@ -1,0 +1,57 @@
+.moveItBoxImage{
+    height: 40px;
+    width: 40px;
+}
+
+.py-5 {
+    padding-top: 3rem!important;
+    padding-bottom: 3rem!important;
+}
+.g-4, .gy-4 {
+    --bs-gutter-y: 1.5rem;
+}
+.row {
+    --bs-gutter-x: 1.5rem;
+    --bs-gutter-y: 0;
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: calc(-1 * var(--bs-gutter-y));
+    margin-right: calc(-.5 * var(--bs-gutter-x));
+    margin-left: calc(-.5 * var(--bs-gutter-x));
+    justify-content: center;
+}
+*, ::after, ::before {
+    box-sizing: border-box;
+}
+
+.container, .container-fluid, .container-lg, .container-md, .container-sm, .container-xl, .container-xxl {
+    --bs-gutter-x: 1.5rem;
+    --bs-gutter-y: 0;
+    width: 100%;
+    padding-right: calc(var(--bs-gutter-x) * .5);
+    padding-left: calc(var(--bs-gutter-x) * .5);
+    margin-right: auto;
+    margin-left: auto;
+}
+
+.feature-icon{
+    height: 70px;
+    width: 70px;
+    border-radius: 10px;
+}
+
+.feature col{
+
+}
+
+.feature-icon-2{
+    height: 50px;
+    width: 50px;
+    display: absolute;
+    left: 30px;
+}
+
+.right-arrow{
+    height: 20px;
+    width: 20px;
+}

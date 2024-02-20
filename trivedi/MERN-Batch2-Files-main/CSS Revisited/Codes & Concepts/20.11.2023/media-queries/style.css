@@ -1,0 +1,10 @@
+h1{
+    font-size: 100px;
+}
+
+@media (min-width: 500px)
+{
+    h1{
+        font-size: 30px;
+    }   
+}

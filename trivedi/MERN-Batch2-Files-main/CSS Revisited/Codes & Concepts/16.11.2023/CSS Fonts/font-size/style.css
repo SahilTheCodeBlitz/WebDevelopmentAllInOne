@@ -1,0 +1,23 @@
+/* p{
+    font-size: 30px;
+}
+
+.second{
+    font-size: 30pt;
+} */
+
+/* body{
+    font-size: 40px;
+} */
+
+html{
+    font-size: 20px;
+}
+
+p{
+    font-size: 1rem;
+}
+
+/* p{
+    font-size: 1em;
+} */
